@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MS Arquitetura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    header h1 { font-weight: 600; font-size: 1.5rem; }
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 300;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #999; }
+    section {
+      padding: 100px 20px 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 140px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      padding: 0.8rem 1.5rem;
+      background: #f2f2f2;
+      color: #0d0d0d;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .portfolio img {
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    .contact a, .contact p {
+      color: #f2f2f2;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MS Arquitetura</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Arquitetura. Forma. Arte.</h2>
+    <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Solicite um orçamento</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Somos um estúdio especializado em arquitetura de alto padrão, focado em soluções personalizadas que unem estética, funcionalidade e conforto. Do conceito à entrega, cada projeto é uma expressão única.</p>
+  </section>
+
+  <section id="servicos" class="services">
+    <h2>Serviços</h2>
+    <ul>
+      <li>• Arquitetura Residencial de Alto Padrão</li>
+      <li>• Arquitetura Comercial (lojas, restaurantes, cafés)</li>
+      <li>• Arquitetura para Eventos</li>
+      <li>• Regularizações e Consultoria Técnica</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfólio</h2>
+    <p>(Adicione aqui suas imagens renderizadas)</p>
+    <img src="https://via.placeholder.com/800x500?text=Render+1" alt="Render 1">
+    <img src="https://via.placeholder.com/800x500?text=Render+2" alt="Render 2">
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>WhatsApp: <a href="https://wa.me/555198029241" target="_blank">(51) 98029-241</a></p>
+    <p>E-mail: <a href="mailto:marlonsilveira2222@gmail.com">marlonsilveira2222@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/ms_arquitetura1" target="_blank">@ms_arquitetura1</a></p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://instagram.com/ms_arquitetura1&size=120x120" alt="QR Code Instagram">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MS Arquitetura e Urbanismo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
